@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    height: 100vh;
+    width: 100%;
+}
+
+.header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.header h1 {
+    margin: 10px 0;
+}
+
+.head h2 {
+    margin: 15px 0;
+    font-size: 20px;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+li {
+    list-style-type: none;
+    margin: 0 15px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #FFD700;
+}
+
+.main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h2 {
+    margin: 20px 0;
+}
+
+.count {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+#num {
+    border: 1px solid #4CAF50;
+    width: 60px;
+    text-align: center;
+    margin: 0 10px;
+    font-size: 24px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.boxes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.boxes div {
+    height: 150px;
+    width: 150px;
+    border: 2px solid #4CAF50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.boxes div:hover {
+    background-color: #e0f7e0;
+    transform: scale(1.05);
+}
+
+#table {
+    height: 300px;
+    width: 100%;
+    border: 2px solid #4CAF50;
+    overflow-y: auto;
+    margin: 20px 0;
+    background: #f9f9f9;
+}
+
+.footer {
+    width: 100%;
+    color: white;
+    background-color: #333;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 24px;
+    }
+
+    .head h2 {
+        font-size: 18px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .boxes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .boxes div {
+        width: 80%;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    #num {
+        font-size: 20px;
+    }
+
+    button {
+        font-size: 16px;
+    }
+
+    .main {
+        padding: 10px;
+    }
+}

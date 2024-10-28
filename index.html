@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Pass Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Welcome To Time Pass Website</h1>
+        <div class="head">
+            <h2>You Could Do This Things Here for Time Pass</h2>
+            <ul>
+                <li><a href="#counter">Counter</a></li>
+                <li><a href="#color">Color Change</a></li>
+                <li><a href="#mult">Multiplication Table Creation</a></li>
+                <li><a href="#guess">Guess The Number</a></li>
+                <li><a href="#rand">Random Joke Generation</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="main">
+        <div id="counter">
+            <h2>Increment or Decrement the Value</h2>
+            <p>Description: The Value can be Incremented or Decremented, if Odd then background color will be Red and if Even then Background will be Green</p>
+            <div class="count">
+                <button onclick="dec()">-</button>
+                <h4 id="num">0</h4>
+                <button onclick="inc()">+</button>
+            </div>
+        </div>
+        <div id="color">
+            <h2>Here there are 4 boxes side by side, each having unknow responses to user interaction, check it out...</h2>
+            <div class="boxes">
+                <div id="b1">Click</div>
+                <div id="b2">Click</div>
+                <div id="b3">Hover</div>
+                <div id="b4">Click</div>
+            </div>
+        </div>
+        <div id="mult">
+            <h2>Enter a Number and also the Stop value till which number You want multiplication table</h2>
+            <div class="form">
+                <h3>Enter Number:</h3>
+                <input type="number" id="number">
+                <h3>Enter End Value:</h3>
+                <input type="number" id="endval">
+                <button onclick="createTable()">Create Table</button>
+            </div>
+            <div id="table"></div>
+        </div>
+        <div id="guess">
+            <h2>There is an Random Number Generated from 1 to 10 guess it.</h2>
+            <div class="numG">
+                <div class="enter">
+                    <h3>Enter Number:</h3>
+                <input type="number" id="gu">
+                <button onclick="check()">Check</button>
+                </div>
+                <div id="result"></div>
+                <button id="again" onclick="again()">Play Again</button>
+            </div>
+        </div>
+        <div id="rand">
+            <h2>Random Joke Generator , Click on the button and get an Random Joke</h2>
+            <button onclick="gen()">Generate Joke</button>
+            <div id="joke"></div>
+        </div>
+    </div>
+    <div class="footer">
+        <h3>&copy; 2024, Md. Abdur Rahman, All rights reserved.</h3>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
